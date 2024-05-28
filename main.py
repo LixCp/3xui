@@ -12,7 +12,7 @@ from db import (
 )
 from xui import xui
 
-admins = [os.environ.get('ADMIN')]
+admins = os.environ.get('ADMIN')
 token = os.environ.get('TOKEN_BOT') 
 api_id = os.environ.get('APP_ID')
 api_hash = os.environ.get('APP_HASH')
