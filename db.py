@@ -6,7 +6,7 @@ from playhouse.shortcuts import ReconnectMixin
 class DB(ReconnectMixin, MySQLDatabase):
     pass
 
-db = DB('3x-ui', user='root', password='',host='localhost', port=3306,charset='utf8mb4')
+db = DB('robot', user='root', password='a8H8HI',host='localhost', port=3306,charset='utf8mb4')
 
 class Base(Model):
     class Meta:
