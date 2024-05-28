@@ -12,10 +12,10 @@ from db import (
 )
 from xui import xui
 
-admins = []
-token = '' 
-api_id = 
-api_hash = ''
+admins = [os.environ.get('ADMIN')]
+token = os.environ.get('TOKEN_BOT') 
+api_id = os.environ.get('APP_ID')
+api_hash = os.environ.get('APP_HASH')
 bot = TelegramClient('3x-ui', api_id, api_hash)
 
 def number_format(num):
